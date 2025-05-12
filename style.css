@@ -1,0 +1,210 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(135deg, #ff4b5c, #ff8a5b); /* degradado bonito */
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Secciones */
+section {
+  background-color: #fff;
+  margin: 30px auto;
+  padding: 30px;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Títulos */
+h1, h2 {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+/* Botones */
+button, .btn {
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #e43d4d;
+}
+
+#sobre-mi {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+#sobre-mi h2 {
+  color: #ff4b5c;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#sobre-mi p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Diseño para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    font-size: 20px;
+    padding: 25px 0;
+  }
+
+  section {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  #sobre-mi h2 {
+    font-size: 22px;
+  }
+
+  #sobre-mi p {
+    font-size: 16px;
+  }
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.05);
+}
+
+#servicios {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#servicios h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.servicio {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.servicio i {
+  font-size: 50px;
+  color: #ff4b5c;
+  margin-bottom: 20px;
+}
+
+.servicio h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.servicio p {
+  font-size: 16px;
+  color: #777;
+}
+
+.boton-correo {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f44336; /* rojo Gmail */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-correo:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .servicio {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicio p {
+    font-size: 15px;
+  }
+  .servicio h3 {
+    font-size: 20px;
+  }
+}
+
+.boton-wsp {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-wsp:hover {
+  background-color: #1ebd5a;
+}
